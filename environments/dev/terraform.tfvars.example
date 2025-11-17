@@ -1,0 +1,23 @@
+environment = "dev"
+project_name = "myproject"
+aws_region   = "us-east-1"
+vpc_cidr     = "10.1.0.0/16"
+
+availability_zones = ["us-east-1a", "us-east-1b"]
+
+instance_type = "t3.small"
+
+rds_engine         = "postgres"
+rds_engine_version = "15.4"
+rds_instance_class = "db.t3.micro"
+rds_db_name        = "mydb"
+rds_username       = "admin"
+rds_password       = "CHANGE_ME_SECURE_PASSWORD"
+
+tags = {
+  Environment = "development"
+  Project     = "myproject"
+  Team        = "engineering"
+  ManagedBy   = "Terraform"
+}
+
